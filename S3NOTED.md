@@ -136,6 +136,20 @@ S3 - Versioning
 2. stored all versions of objects.
 3. versioning can't be disabled, only suspended.
 4. integrates with **Lifecycle rules**
-5. 
+
+Lifecycle Management
+---------------------------
+
+1. automate moving your objects between the different object tiers.
+2. can be used in conjunction with versioning.
+
+Sharing S3 buckets Across Accounts
+--------------------------------------
+3 ways.
+1. Using Bucket policies & IAM programmatic access only.
+2. Using Bucket ACLs & IAM(individual objects). Programmatic access only.
+3. Cross-Account IAM roles. programmatic and console access.
+ 
+
 
 Read S3 FAQs.
