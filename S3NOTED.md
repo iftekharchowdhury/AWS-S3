@@ -150,6 +150,17 @@ Sharing S3 buckets Across Accounts
 2. Using Bucket ACLs & IAM(individual objects). Programmatic access only.
 3. Cross-Account IAM roles. programmatic and console access.
  
+ Cross Region Replication
+ -----------------------------
+ 1. cross region replication need versioning enabled.
+
+S3 Transfer Acceleration
+----------------------------
+1. S3 Transfer Acceleration utilises the CloudFront Edge network to accelerate your uploads to S3.
+2. without direct uploading to S3, we can use a object url to upload edge location.
+3. Edge location later transfer that file to S3. 
+4. 
+ 
 
 
 Read S3 FAQs.
