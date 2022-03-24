@@ -73,7 +73,39 @@ S3 Storage classes
 5. S3 Glacier
 6. S3 Glacier Deep Archieve
 
+What are different tiers?
 
+S3 Standard 
+==============
+most expensive
+1. General purpose storage
+2. used for frequently accessed data.
+3. first 50 TB / Month - $0.023 per GB, Next 450 TB /Month - $0.022 per GB, Over 500 TB / Month - $0.021 per GB
+
+S3 Intelligent-Tiering 
+--------------------------
+Best tier (recommended)
+Automatic cost savings for data with unknown or changing access patterns.
+frequent access tier, first 50 TB / Month - $0.023 per GB
+infrequent access tier, all storage /Month -$0.0125 per GB
+Monitoring and Automation, All storgae /Month - $0.0025 per 1000 objects.
+
+S3 Standard 
+--------------
+Infrequent access - For long lived but infrequently accessed data that needs ms access.
+All storage /Month - $0.0125 per GB
+
+S3 One Zone
+-------------------
+Infrequent access - $0.01 per GB
+
+S3 Glacier
+-------------
+long-term backup and archieves with retrieval option from 1 min to 12 hours - $0.004 per GB
+S3 Glacier Deep Archieve 
+------------------------
+- For long-term data archiving that is accessed once or twice in a year can be restored within 12 hours.
+price - all storage / month - $0.00099 per GB
 
 S3 Billing 
 ---------------
@@ -83,5 +115,21 @@ S3 Billing
 4. Data transfer pricing 
 5. Transfer acceleration
 6. Cross region replication pricing 
+
+S3 security and encryption
+--------------------------------
+1. All newly created buckets are **private**
+Encryption in transit is achieved by
+1. SSL/TLS - client side encryption
+
+Server-side encryption
+------------------------
+S3 Encryption Key type
+--------------------------------
+1. S3 managed keys - SSE-S3 - An encryption key that Amazon S3 creates, manages, and uses for you
+2. AWS key management service, SSE-KMS - An encryption key protected by AWS Key Management Service (AWS KMS)
+3. SSE-C
+
+
 
 Read S3 FAQs.
