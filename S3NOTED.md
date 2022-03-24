@@ -130,6 +130,12 @@ S3 Encryption Key type
 2. AWS key management service, SSE-KMS - An encryption key protected by AWS Key Management Service (AWS KMS)
 3. SSE-C
 
-
+S3 - Versioning 
+------------------------
+1. backup tool.
+2. stored all versions of objects.
+3. versioning can't be disabled, only suspended.
+4. integrates with **Lifecycle rules**
+5. 
 
 Read S3 FAQs.
